@@ -7,7 +7,7 @@ function reset() {
   let re_onlynums = new RegExp("^[0-9]+$"); //regex to check only for the numbers between 0 and 9
   let re_onlynumsandx = new RegExp("^[0-9x]+$"); //regex to check for the numbers between 0 and 9 and character x
   let dimensions = prompt(
-    "Please enter the new dimensions. Example: 5, 6x6, 12x6"
+    "Please enter the new dimensions. Example: 5, 6x6, 12x6 (The maxiumum is 64)"
   ); //creates the prompt for the dimensions and the var to store them
   if (re_onlynums.test(dimensions)) {
     //checks if dimensions is only a numbers
